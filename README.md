@@ -1,4 +1,4 @@
-# Apache HTTP Server 2.0 vulnerabilities notes
+# Hardening Apache2 on Debian Bookworm
 
 ## Common Apache Web Server Attacks
 
