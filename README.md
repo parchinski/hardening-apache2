@@ -28,7 +28,7 @@
 
 2. **Disable Unnecessary Modules**: I disabled unnecessary modules to reduce the attack surface of the Apache web server. To begin this process I deleted all running modules from Apache2 then I added only the essentials need for the web server to function. These essentials were mpm_prefork for the Apache2 web server to function, dir and mime for the web server to serve files, autoindex for the web server to display a list of files in a directory if no index file is present, and log_config for the web server to log activity. and authz_core for the webserver to authenticate users. I will decide later if I want to add more modules to the web server but only for additional encryption/security.
 
-### Commands to enable and disable modules
+### Commands to Enable and Disable modules
 
 ```
 sudo a2dismod <module_name>
@@ -86,11 +86,11 @@ sudo chown -R www-data:www-data .
 </Directory>
 ```
 
-### Conclusion and my Implementations
+### Conclusion and My Implementations
 
 Apache2 can be difficult to make safe especially at scale but once I learn encryption better I think I will be mroe confident with it. I have also attached some images showing my implementations. of two of the best practices I implemented. The first shows how the owner and group of the www folder and all of its contents are owned by www-data. The second shows how I successfully minimized the amount of modules running on the Apache2 web server to only what was necessary. After my testing the web server was still able to serve files.
 
 ## Sources
 
-- [Apache Web Server Security] (https://www.comparitech.com/net-admin/apache-web-server-security/)
-- [Apache Docs Vulnerabilities] (https://httpd.apache.org/security/vulnerabilities_20.html)
+- [Apache Web Server Security](https://www.comparitech.com/net-admin/apache-web-server-security/)
+- [Apache Docs Vulnerabilities](https://httpd.apache.org/security/vulnerabilities_20.html)
