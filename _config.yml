@@ -1,7 +1,7 @@
 title: Hardening Apache2
 description: This is a grouping of notes that detail how to harden an Apache2 web-server running on a vm hosted Debian12 os.
-baseurl: ""
 permalink: /:title/
+theme: "dracula/gh-pages"
 remote_theme: "dracula/gh-pages"
 plugins:
   - jekyll-relative-links
