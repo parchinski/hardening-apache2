@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Hardening Apache2 on Debian Bookworm
 
 ## Common Apache Web Server Attacks
