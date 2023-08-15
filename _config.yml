@@ -9,5 +9,5 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - README.md
+  - full-writeup.md
   - summary.md
