@@ -1,4 +1,4 @@
-theme: dracula
+remote_theme: "dracula/gh-pages"
 plugins:
   - jekyll-relative-links
 relative_links:
@@ -6,3 +6,4 @@ relative_links:
   collections: true
 include:
   - README.md
+
