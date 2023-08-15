@@ -44,7 +44,7 @@ sudo a2enmod <module_name>
 </IfModule>
 ```
 
-4. **Enable SSL Encryption**: the process is complex and requires an ssl provider here is a good tutorial for Apache and Debian I will maybe implement this later if bored: [SSL Tutorial] (https://www.ssltrust.com.au/help/setup-guides/debian-ubuntu-ssl-install-guide)
+4. **Enable SSL Encryption**: the process is complex and requires an ssl provider here is a good tutorial for Apache and Debian I will maybe implement this later if bored: [SSL Tutorial](https://www.ssltrust.com.au/help/setup-guides/debian-ubuntu-ssl-install-guide)
 
 5. **Ensure That Apache2 and Debian 12 are Regularly Updated**: I update by running the following commands.
 
