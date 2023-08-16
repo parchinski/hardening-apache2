@@ -27,14 +27,14 @@ I reasearched the most common attacks on Apache2, and one I came across and want
 </IfModule>
 ```
 
-5. **Ensure That Apache2 and Debian 12 are Regularly Updated**: I update by running the following commands.
+3. **Ensure That Apache2 and Debian 12 are Regularly Updated**: I update by running the following commands.
 
 ```
 sudo apt update
 sudo apt upgrade
 ```
 
-8. **Enable Apache Logging Modules**: I would enable the logging modules to log activity on the web server. This will work after I download the modules: log_config, logio, and mod_log_forensic. Then I would add the following code to the apache2.conf file.
+4. **Enable Apache Logging Modules**: I would enable the logging modules to log activity on the web server. This will work after I download the modules: log_config, logio, and mod_log_forensic. Then I would add the following code to the apache2.conf file.
 
 ```
 # Log format
@@ -47,13 +47,13 @@ LogFormat "%{User-agent}i" agent
 CustomLog /var/log/apache2/access.log combined
 ```
 
-9. **Enable Apache2 to run with minimal permissions**: Make sure www directory at /var/www is owned by www-data user and group. This is the user and group that Apache2 runs under. This will ensure that the www folder has the lowest possible permissions. I did this by running the following commands.
+5. **Enable Apache2 to run with minimal permissions**: Make sure www directory at /var/www is owned by www-data user and group. This is the user and group that Apache2 runs under. This will ensure that the www folder has the lowest possible permissions. I did this by running the following commands.
 
 ```
 sudo chown -R www-data:www-data .
 ```
 
-10. **Disable .htaccess files and Diabled Directory Browsing**: I disabled .htaccess files because they are not needed and can be used to exploit the web server. I disabled directory browsing because it is not needed and can be used to exploit the web server. I did this by adding the following code to the apache2.conf file.
+6. **Disable .htaccess files and Diabled Directory Browsing**: I disabled .htaccess files because they are not needed and can be used to exploit the web server. I disabled directory browsing because it is not needed and can be used to exploit the web server. I did this by adding the following code to the apache2.conf file.
 
 ```
 <Directory /var/www/>
